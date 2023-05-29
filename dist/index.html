@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>MoanFi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <section class="popup-reservation-container">
+          <span class="reservation-page-close-btn">
+            <i class="closeBtn fa fa-times fa-4x"></i>
+          </span>
+          <div class="popup-reservation-img-div"></div>
+          <div class="name-inst-div">
+            <h1 class="name"></h1>
+            <div class="area-category-div">
+              <h2 class="area"></h2>
+              <h2 class="category"></h2>
+            </div>
+            <p class="instructions"></p>
+          </div>
+          <div class="reservations-conatainer">
+            <h1>Reservations<span class="res-count">(0)</span></h1>
+            <div class="reservations-div"></div>
+          </div>
+          <form action="">
+            <input class="Your-name" type="text" placeholder="Your name" />
+            <input class="start-date" type="date" placeholder="start date" />
+            <input class="end-date" type="date" placeholder="end date" />
+            <button class="form-btn" type="button">Reserve</button>
+          </form>
+        </section>
+      </div>
+      <header class="header">
+        <div class="meal-logo-div"></div>
+        <h4 class="meals-counter"></h4>
+        <span>MoanFi Restaurant </span>
+      </header>
+      <main>
+        <ul class="meals"></ul>
+        <div class="popup" id="popup">
+          <div class="popupcontent"></div>
+        </div>
+      </main>
+      <footer>Created by Mohi, Fitz, Huzaifa under MIT licence</footer>
+    </div>
+  </body>
+</html>

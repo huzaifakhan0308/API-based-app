@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+.background {
+  background-image:
+    linear-gradient(to bottom, rgba(190, 158, 202, 0.6), rgba(225, 238, 239, 0.8)),
+    url('./assets/image/image3.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: absolute;
+  position: fixed;
+}
+
+.container-appear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-reservation-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.961);
+  color: black;
+  padding: 1vh;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+  position: absolute;
+  position: fixed;
+  width: 90%;
+  height: 90vh;
+  margin: 1vh;
+  overflow-y: scroll;
+}
+
+.reservation-page-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90%;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  position: absolute;
+}
+
+.popup-reservation-img-div {
+  width: 50vh;
+  height: 30vh;
+}
+
+.name-inst-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area-category-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+.reservations-conatainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservations-div {
+  height: 11vh;
+  overflow-y: scroll;
+  border: 1px solid rgb(2, 2, 2);
+  padding: 0 0 0 10px;
+}
+
+.reservations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup-reservation-container form {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  margin-top: 2vh;
+}
+
+.popup-reservation-container form input {
+  margin-bottom: 1vh;
+  padding: 2.5px 0 2.5px 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  cursor: pointer;
+  font-size: x-large;
+  column-gap: 5%;
+  margin-bottom: 20px;
+  justify-items: center;
+  background-color: rgba(255, 255, 255, 0.763);
+}
+
+.meal-logo-div {
+  margin-left: 5vh;
+  height: 100%;
+  width: 10vh;
+}
+
+header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.763);
+  margin-top: 20px;
+}
+
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.like-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-img {
+  width: 100%;
+  height: 30vh;
+}
+
+.meals {
+  display: flex;
+  column-gap: 15%;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  row-gap: 19px;
+  justify-content: space-around;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  background: #ffffffe6;
+  width: 85%;
+  height: 85%;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 4px solid black;
+  margin: 5%;
+}
+
+.closeBtn {
+  position: sticky;
+  float: right;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin-left: 90%;
+}
+
+.popupcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  font-size: larger;
+  text-align: center;
+}
+
+.detail-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.recipe {
+  width: 80vh;
+  font-size: 18px;
+  margin: auto;
+}
+
+.instructions {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.img-large {
+  width: 50vh;
+  height: 30vh;
+}
+
+.submitBtn {
+  width: 40%;
+  margin-left: 20%;
+  padding: 5px;
+  font-size: large;
+}
+
+#commentDiv {
+  display: flex;
+  max-height: 100px;
+  overflow-y: scroll;
+  font-size: large;
+  border: 1px solid black;
+}
+
+.commentChild-P {
+  display: flex;
+  padding-left: 5px;
+}
+
+.inputstyle {
+  display: block;
+  margin: auto;
+  width: 50vh;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 2.5px 0 2.5px 5px;
+}
+
+.commentText {
+  padding: 4px;
+  height: 100px;
+}
+
+.byName {
+  margin-left: 5px;
+}
+
+.detailstyle {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.popupbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.comBtn,
+.resBtn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 8px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.comBtn:active,
+.resBtn:active,
+.comBtn:hover,
+.resBtn:hover {
+  outline: 0;
+}
